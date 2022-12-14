@@ -63,3 +63,22 @@ plot(f, -3, 4, label=L"$f(x) = 2x^3-3x^2-12x+4$")
 using Plots
 h(x) = x<=0 ? -2x : x<=2 ? x^2 : 4
 plot(h, legend = false)
+
+
+
+
+#Calcular los polinomios de taylor hasta grado 10 de las siguientes funciones en los puntos indicados.
+# f(x)=cos(x) en x=pi/2
+
+using SymPy
+@vars x real=true
+f(x) = cos(x)
+series(f(x), x, Sym(pi)/2, 10)
+
+#g(x)=ln(x) en x=1
+g(x) = log(x)
+series(g(x), x, 1, 10)
+
+#h(x)=e^x en x=0
+h(x) = exp(sin(x))
+series(h(x), x, 0, 10)
