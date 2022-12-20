@@ -1,4 +1,4 @@
-# 
+#
         # using Plots, SymPy
         # @vars x real=true
         # f(x)= ℯ^(atan(x/2))
@@ -15,7 +15,7 @@
         # print("\n")
         # print(limit(f(x), x=>-oo))
 
-#periodo y amplitud
+# periodo y amplitud (amplitud menos de 2, periodo 2pi)
         # f(x)=sin(3x)-cos(2x)
         # plot(f,xlims=(0,10))
 
